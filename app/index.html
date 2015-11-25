@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="parkingApp">
+<head>
+	<meta charset="UTF-8">
+	<title>angularjs-parking</title>
+</head>angularjs_parking
+<body ng-controller="parkingCtrl">
+
+	<h1>IS Parking</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>SL #</th>
+				<th>Plate #</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="vehicle in cars">
+				<td>{{$index}}</td>
+				<td>{{vehicle.plate}}</td>
+			</tr>
+		</tbody>
+	</table>
+	<label >Enter Plate #</label>
+	<input type="text" ng-model="car.plate">
+	<button ng-click="save(car)">Save</button>
+
+	
+	<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/controllers.js"></script>
+</body>
+</html>

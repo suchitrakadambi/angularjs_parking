@@ -1,0 +1,24 @@
+{
+  "name": "angularjs_parking",
+  "description": "parkingManagement.system",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "parking"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "suchitrakadambi <suchitrakadambi@gmail.com>"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8"
+  }
+}
